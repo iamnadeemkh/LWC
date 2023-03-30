@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Data Binding">
+        <lightning-input name="firstName" label="First Name" onchange={handleChange}></lightning-input>
+        <lightning-input name="lastName" label="Last Name" onchange={handleChange}></lightning-input>
+
+        <div>Fullname is {fname} {lname}</div>
+        <div>Fullname in UpperCase is {upperCase}</div>
+    </lightning-card>
+
+    <lightning-card title="Two Way Data Binding">
+        <lightning-input name="firstNameObj" label="First Name" onchange={handleChangeObj}
+            value={name.fN}></lightning-input>
+        <lightning-input name="lastNameObj" label="Last Name" onchange={handleChangeObj}
+            value={name.lN}></lightning-input>
+
+        <div>Fullname is {name.fN} {name.lN}</div>
+        <div>Fullname in UpperCase is {upperCaseObj}</div>
+    </lightning-card>
+</template>
