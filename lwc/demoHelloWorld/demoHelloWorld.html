@@ -1,0 +1,16 @@
+<template>
+    HELLO WORLD!
+    <div>Name : {name}</div>
+    <div>Company : {company}</div>
+    <div>Designation : {designation}</div>
+    <div>City : {city}</div>
+    <div>Record ID : {recordId}</div>
+    <lightning-input label="Enter your name" value={name} onchange={handleNameChange}></lightning-input>
+    <lightning-card title="Ligtning Inputs">
+        <lightning-input label="Enter your email address" type="text"></lightning-input>
+        <lightning-input label="Enter your age" type="number"></lightning-input>
+        <lightning-input label="Enter your birthdate" type="date"></lightning-input>
+        <lightning-input label="Are you a vegetarian?" type="checkbox"></lightning-input>
+        <lightning-input label="Select your gender" type="radio" options={genderOptions}></lightning-input>
+    </lightning-card>
+</template>
